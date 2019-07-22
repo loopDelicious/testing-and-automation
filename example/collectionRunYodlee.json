@@ -1,0 +1,239 @@
+{
+	"id": "6243001c-6eef-408e-a48e-f415c87675fe",
+	"name": "Yodlee API Getting Started",
+	"allTests": [],
+	"timestamp": "2019-07-22T23:17:23.506Z",
+	"collection_id": "e5ae6b7c-2261-424d-b0cc-d61075a1eceb",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "da331a67-ee3a-433b-a68e-21ffa64145d2",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "e5ae6b7c-2261-424d-b0cc-d61075a1eceb",
+		"name": "Yodlee API Getting Started",
+		"description": "Getting Started helps you quickly get an understanding of the Yodlee API.  \n  \nBefore we start, some keywords that you should know:  \n  \n**cobrand:** You/your application.  \n**user:** End user of your application.  \n**jwt-token:** A session token generated using your private key. This will be used to authenticate and authorize API calls   \n**FastLink:** A Yodlee hosted widget that can be embedded into your website/app and allows users to search and connect their financial institutions.  \n\n# Prerequisites\n* [Register](https://developer.yodlee.com/user/register) for a developer account.  \n* Get your cobrand credentials and user details from your [API dashboard](https://developer.yodlee.com/api-dashboard).  \n* You can use any of the 5 pre-registered test users or create your own users; details are present at the bottom of the API-Dashboard page.\n* Please note that [user\\register](https://developer.yodlee.com/apidocs/index.php#!/user/register) API is restricted to the sandbox environment.\n\n\n# Using the API calls\nAll calls required below Postman variables to be set:\n  \n**host** The url for your environment. For a sandbox account, this would be https://sandbox.api.yodlee.com/ysl/  \n\n**privateKey** For Sandbox this would the privateKey that you download from the [dashboard](https://developer.yodlee.com/api-dashboard)  \n\n**issuerId** This would the issuerId (aka API Key) assigned to you. For Sandbox this is directly available to you from the dashboard privateKey that you download from the [dashboard](https://developer.yodlee.com/api-dashboard). For development and production environments, the issuerId is generated when you upload your public key to our [dashboard](https://developer.yodlee.com/api-dashboard).  \n\n**userName** For Sandbox you can copy&paste one of the test users from the [dashboard](https://developer.yodlee.com/api-dashboard).  \n\n**token** An Authorization Bearer token that is passed to each request. For this Postman collection, it is generated when you make the `Generate Token` call. When you start building your app, please visit [Getting Started](https://developer.yodlee.com/docs/api/1.1/getting-started#generate-token-sandbox) for steps to generate a token. This variable is auto-generated, you dont need to set any value for this.\n\n# Generating a Token\nTo generate an Authorization Token in your app. Please follow the steps described [here](https://developer.yodlee.com/docs/api/1.1/getting-started#generate-token-sandbox)\n\n# Linking a Bank Account\nTo link a bank account, please follow the steps described [here](https://developer.yodlee.com/docs/api/1.1/getting-started#fastlink)\n\n<b>Using personal data</b>  \nTo use a personal account, enter the bank you use and log in with your credentials.<br/>\n\n<b>Using dummy data</b>  \nTo link a dummy account, go to the <a href=\"https://dag2.yodlee.com/dag/index.do\">Dummy Account Generator site</a> (DAG). Click <b>Create new catalog</b> and create a dummy account. You will be taken to a page with a table containing data. You will see a username and password (e.g., helloworld.site16441.1 and site16441.1). To add the account go to FastLink and search for Dag Site. Click <b>Dag Site</b> and enter your DAG username/password.\n\n# Endpoints",
+		"auth": null,
+		"events": [
+			{
+				"listen": "prerequest",
+				"script": {
+					"id": "43b9701a-f823-4c80-9cd7-e060817957a2",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			},
+			{
+				"listen": "test",
+				"script": {
+					"id": "bca969c8-b175-4d81-9da6-04943565fe3a",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			}
+		],
+		"variables": null,
+		"order": [
+			"df1bb0a2-bb4c-405a-8744-311ee5e4c75b",
+			"7e221091-aa55-4761-b624-371a32ab79fe",
+			"79269a25-d598-4a31-9912-7873ea02f129",
+			"f58a5540-73c0-4d6b-9f94-e443d317476e",
+			"fc77ca2b-3fde-4685-8e85-f98602e0965e"
+		],
+		"folders_order": [],
+		"owner": "1559979",
+		"favorite": false,
+		"isFavorite": true
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Generate Token",
+			"id": "df1bb0a2-bb4c-405a-8744-311ee5e4c75b",
+			"url": "https://8244c0d7-2407-48b0-ad3e-6279b9cebcaa.mock.pstmn.io/do-nothing",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"493"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "493",
+			"totalRequestTime": "493",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get Providers",
+			"id": "7e221091-aa55-4761-b624-371a32ab79fe",
+			"url": "https://sandbox.api.yodlee.com/ysl/providers?name=KeyBank&top=4",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"128"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "128",
+			"totalRequestTime": "128",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get Accounts",
+			"id": "79269a25-d598-4a31-9912-7873ea02f129",
+			"url": "https://sandbox.api.yodlee.com/ysl/accounts",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"333"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "333",
+			"totalRequestTime": "333",
+			"iterationResults": {}
+		},
+		{
+			"name": "Get Transactions",
+			"id": "f58a5540-73c0-4d6b-9f94-e443d317476e",
+			"url": "https://sandbox.api.yodlee.com/ysl/transactions?fromDate=2019-01-01",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"89"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "89",
+			"totalRequestTime": "89",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 1,
+	"totalFail": 0,
+	"totalTime": 1043,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Generate Token",
+			"id": "df1bb0a2-bb4c-405a-8744-311ee5e4c75b",
+			"url": "https://8244c0d7-2407-48b0-ad3e-6279b9cebcaa.mock.pstmn.io/do-nothing",
+			"time": "2019-07-22T23:17:23.506Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Get Providers",
+			"id": "7e221091-aa55-4761-b624-371a32ab79fe",
+			"url": "https://sandbox.api.yodlee.com/ysl/providers?name=KeyBank&top=4",
+			"time": "2019-07-22T23:17:23.506Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Get Accounts",
+			"id": "79269a25-d598-4a31-9912-7873ea02f129",
+			"url": "https://sandbox.api.yodlee.com/ysl/accounts",
+			"time": "2019-07-22T23:17:23.506Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "Get Transactions",
+			"id": "f58a5540-73c0-4d6b-9f94-e443d317476e",
+			"url": "https://sandbox.api.yodlee.com/ysl/transactions?fromDate=2019-01-01",
+			"time": "2019-07-22T23:17:23.506Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}

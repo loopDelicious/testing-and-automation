@@ -1,0 +1,34 @@
+{
+	"id": "e0dad924-bb71-4434-918c-4d6a64bc0d76",
+	"name": "Yodlee",
+	"values": [
+		{
+			"key": "host",
+			"value": "https://sandbox.api.yodlee.com/ysl/",
+			"enabled": true
+		},
+		{
+			"key": "privateKey",
+			"value": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCk8DoaqWGYm0DyaV0oe8m3Fd6R\nsotpT/s4/d2IPJG1vbFENuA4eTLuQEmkwsMhfbK4aF+TotFEnpcjDD+TWYjBmAQ6vO7zkXOPrveZ\nhNIzARvXBSHontqhEoJCJEKEw+VmrjOXj5gztRDT6mZOtk/LleBXw1AHlBvU+3YLfZUzqW6JJZ1H\nwoUlVBia5Jge+jNm9vcDB5SvrIxum+us1dHnoIeQ1QiTiWvCFQyRvjwU0GFTulgxLadhrrPLjdHC\nTdRuRTHS+EQ+ShxmqvnGJRpRsxCJwC4XM4BUx8e1dInC7peaM/SDbz2vrDLKEqhyVWJRwMulG8J2\ndBNQCiQdeCLXAgMBAAECggEAIkcajDfvZHu/f6GODr/LKBWPb9AfUP+iQjHgPFP6JD8L/BU7fAEU\nKJeLtoYTb35kChcG5fPMcepTlqERBVpyJWmmV160ekIcNhwysOD9nkP4uTMD3QhGf3sNPxmyCU18\n+13wsurQws46dRAduvYAl1rKiPK6Sxjov9aSrcinnVieF1dYMuL8VftT6tbCtGTTycWl+R/uGESa\nQQa0wVtiQMfLBHga+XvjaFQILqdlTv/3hPpt0InjGk/hNSOFKttK3yvNT6BNCWqD/7eaO1ThUo4v\nxcnND8JQX2Afz+lheANWMknpEyrBWPmX6jERYN1Fp5t6R73q4KwrtaPqPB9XAQKBgQD3C3GKMAfD\nxjML6mHEiLSy286NQ6HTRAxrwY1ez0SeL71GnQXzv49U4Kd/MnfeT2+65nnBKK/6JJZwvjoPiJfw\nXgZT2qalMqPtMHq+PdmOTkxu6qIseIJVEMFvKpc7iicZv12S2OnZe6mUth1b+JlSLGaQs2oztmpP\nSNdub5Z1IQKBgQCq6tfLoFp1uACcGVd95MWciccOHziCfPE0CvFrtVdkqONB7MIVxopZkHc9xwk+\nJh1jfuJB3p6J5g0kzyL/FFXsloxfS+SEeTMzwYLSmKBqt7NGWWR5lWGMEgS1BH0x7TRkHIu8d7M+\nZBKKKIo+1LtqDIVGYv3R1yMrrBUqNokg9wKBgQDwJnOs/ZvOuHEO+D0qLCpcZEiaElDRaqkYZwLi\nU2JE0+uPJT2QAXt36xtoDstvlJDsgveAyeinpcGIv6L5TrNEumI0Sa0NkfjArgvju4QtTfgHKpeT\n22H3B17CjgiNnHL+GIUCJ1LMU+Y55f8MVNHWi8r4hzCKLJ2TjR++/0KngQKBgQCmu0mgPuGADOur\nW51aFp4fwtgIErTRtoimODai19hVPdvUJ95915yHGsL35P5DPnNU6CZYE4+c/mq8CcUeCPx5O7Pc\nEvDtuj4UsyWnw3RaJrIgYnv9j5gFSF6HJ8XpunhtYNuAE1Ur+/uKA1o5SNU68tPgghkRZ0nMBKbw\n8xp6qQKBgCcb2NboRFPmi8BEwt+HOeB5XqwgWbGyjj4nmK9+r42nTVlb3vOXVPLdpqqZnn9P+VSv\neC8NmnQiKd+BXD/zBWDuZIOx8ANATgnkcY5SDHOfJqOTdalJBJiy9W0jJQhwedgmZThFuThuYQ0l\nePGzTxuy8BD6xtgwIOOYO2nlz32B\n-----END PRIVATE KEY-----                                        ",
+			"enabled": true
+		},
+		{
+			"key": "issuerId",
+			"value": "0098bef0-faaddbfa-e385-470e-a8c9-073c47269664",
+			"enabled": true
+		},
+		{
+			"key": "userName",
+			"value": "sbMemBVQflccBJTtZa2",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-07-11T17:29:14.344Z",
+	"_postman_exported_using": "Postman/7.3.0-canary05"
+}

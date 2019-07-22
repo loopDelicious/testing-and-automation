@@ -1,6 +1,8 @@
-![[postman](https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png)](https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png)]
+![[postman](https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png)](https://assets.getpostman.com/common-share/postman-logo-horizontal-320x132.png)
 
 Follow this example of API testing and automation in [Postman](https://www.getpostman.com/).
+
+![[workflow](https://i.imgur.com/YcEStf1.png)](https://i.imgur.com/YcEStf1.png)
 
 ## Pre-requisites
 1. Download the [Postman app](https://www.getpostman.com/downloads/) for Mac, Windows, or Linux. Make sure you have a Postman account, and you're logged in.
@@ -8,7 +10,7 @@ Follow this example of API testing and automation in [Postman](https://www.getpo
 
 ## Getting Started
 
-### Writing an API test
+### Write your API tests
 
 There are many types of API tests that you can write using Postman.
 
@@ -27,7 +29,7 @@ pm.test("Status code is 200", function () {
 
 For more tutorials and interactive examples of the types of API tests that you can write using Postman, you can reference community-contributed [templates](https://learning.getpostman.com/docs/postman/launching_postman/newbutton/#templates). For example, in the Postman app, go to the orange **+New** button > **Templates** tab > import the **Intro to Writing Tests - with Examples** template.
 
-### Running API tests
+### Run your API tests
 
 There's a few options to run API tests in Postman.
 
@@ -48,7 +50,7 @@ You can also [configure a reporter](https://github.com/postmanlabs/newman#report
 
     $ newman run myCollection.json -r cli,json
 
-### Automating API testing
+### Automate your API tests
 
 There's a few options to automate API testing in Postman. Just like running a single or a couple API tests, you can choose your level of automation.
 
